@@ -1,6 +1,6 @@
 // testlib.c - тесты для проверки библиотеки timerlib.h
 
-#include "../timerlib/timerlib.h"
+#include "../timerlib.h"
 
 int main(void)
 {
