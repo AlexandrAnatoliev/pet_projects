@@ -2,12 +2,7 @@
 
 #include <stdio.h>
 #include <time.h>
-
-union time_u		// объединение для хранения времени
-{
-	clock_t clk;	// clock_t(long)- для замера времени 
-	double dbl;		// double		- для вывода на экран в виде десятичной дроби
-};
+#include "../timerlib.h"
 
 int start(union time_u *time)
 {
@@ -15,7 +10,6 @@ int start(union time_u *time)
 	
 	return 0;
 }
-
 
 int stop(union time_u *time)
 {
@@ -26,7 +20,6 @@ int stop(union time_u *time)
 
 	return 0;
 }
-	
 
 int show(union time_u *time)
 {
