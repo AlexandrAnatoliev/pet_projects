@@ -14,9 +14,9 @@ This header file describes the data structures and prototypes (declarations) of 
 The header file `<time.h>` allows you to work with time.
 
 The file `"timerlib.h"` contains three functions:
-* `start`	- starts a timer and stores the current time in the `time` union (integer type clock_t);
-* `stop`	- stops the timer and calculates the program execution time in seconds, stores it in `time` (in real form - type double);
-* `show`	- displays the operating time on the screen, with an accuracy of six decimal places.
+* `start()`	- starts a timer and stores the current time in the `time` union (integer type clock_t);
+* `stop()`	- stops the timer and calculates the program execution time in seconds, stores it in `time` (in real form - type double);
+* `show()`	- displays the operating time on the screen, with an accuracy of six decimal places.
 
 The `union time_u` type union is used to store two different types of time:
 * clock_t	- to measure program running time;
